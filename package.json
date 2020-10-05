@@ -1,0 +1,13 @@
+{
+  "name": "fancy-navigator",
+  "version": "0.0.1",
+  "description": "A fancy animation effect navigation library.",
+  "main": "index.ts",
+  "repository": "https://github.com/seeskyblue/fancy-navigator.git",
+  "author": "seeskyblue <seeskyblue@163.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}

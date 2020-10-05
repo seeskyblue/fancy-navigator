@@ -1,0 +1,118 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:compat/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "compat",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "default-case": "warn",
+    "no-await-in-loop": "error",
+    "no-duplicate-imports": "error",
+    "no-magic-numbers": [
+      "warn",
+      {
+        "ignore": [
+          -1,
+          0,
+          1,
+          2,
+          100
+        ],
+        "ignoreArrayIndexes": true
+      }
+    ],
+    "no-shadow": "error",
+    "no-use-before-define": [
+      "error",
+      "nofunc"
+    ],
+    "no-useless-rename": "error",
+    "object-shorthand": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "error",
+    "prefer-template": "error",
+    "sort-imports": [
+      "error",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true
+      }
+    ],
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-extraneous-dependencies": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      {
+        "ignoreClassFields": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/no-unused-prop-types": "error",
+    "react/no-unused-state": "error",
+    "react/self-closing-comp": "error",
+    "react/sort-prop-types": [
+      "error",
+      {
+        "ignoreCase": true,
+        "callbacksLast": true,
+        "sortShapeProp": true
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "warn",
+    "jsx-a11y/label-has-for": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
